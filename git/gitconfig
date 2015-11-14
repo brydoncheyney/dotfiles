@@ -1,0 +1,11 @@
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	l1 = log --oneline
+	l = log --graph --pretty=format:'%Cred%h%Creset %Cgreen(%cr)%Creset%C(yellow)%d%Creset %s'
+[user]
+	email = brydon@remission.org.uk
+	name = Brydon Cheyney
+[push]
+	default = simple

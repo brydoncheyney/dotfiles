@@ -1,0 +1,16 @@
+export SHELL_HOME=~/dotfiles/shell
+ZSH_THEME='wedisagree'
+
+source "$SHELL_HOME/alias"
+source "$SHELL_HOME/env"
+#source "$SHELL_HOME/zsh/light-weight.zsh"
+source "$SHELL_HOME/zsh/oh-my.zsh"
+
+bindkey '\el' down-case-word
+bindkey '\eu' up-case-word
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export EDITOR=$(which vi)
+
+alias fuck='eval $(thefuck $(fc -ln -1))'

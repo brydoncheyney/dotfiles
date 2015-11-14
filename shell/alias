@@ -1,0 +1,6 @@
+alias rld="source ~/.zshrc"
+
+alias ll="ls -l"
+alias la="ls -la"
+
+alias docker="sudo docker"
