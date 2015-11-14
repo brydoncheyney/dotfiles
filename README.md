@@ -1,6 +1,6 @@
 # dotfiles
 
-all of the dotfiles. inspired by [Brad Lill's disruptive thinking](https://github.com/bradylill/dotfiles)
+all of the dotfiles. inspired by [Brady Lill's disruptive thinking](https://github.com/bradylill/dotfiles)
 
 configuration files for:
 
