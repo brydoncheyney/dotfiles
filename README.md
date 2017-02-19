@@ -1,15 +1,28 @@
 # dotfiles
 
-all of the dotfiles. inspired by [Brady Lill's disruptive thinking](https://github.com/bradylill/dotfiles)
+All of the dotfiles. inspired by [Brady Lill's disruptive thinking](https://github.com/bradylill/dotfiles)
 
-configuration files for:
+## Overview
 
-- emacs
+Install scripts and configuration files for an Ubuntu environment
+
 - git
+- gnome-terminal
+- google-chrome
 - shell
 - thefuck
 - tmux
+- vagrant
 - vim
+- virtualbox
 - zsh
 
-remind me to write the install.sh scripts some day...
+## Pre requisites
+
+- curl
+
+Note that this will be installed as part of the setup.
+
+## Usage
+
+    ./setup.sh

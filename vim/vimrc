@@ -1,0 +1,27 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+" Reform search.
+set ignorecase
+set smartcase
+
+" Avoid the leader pinky-stretch.
+let mapleader = ","
+let maplocalleader = ","
+
+" Visually indicate when we're in insert mode.
+autocmd InsertEnter * set cursorline
+autocmd InsertLeave * set nocursorline
+
+" No tabs!
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Nerd tree
+nmap <LocalLeader>nt :NERDTreeToggle<CR>
+nmap <LocalLeader>f :NERDTreeFind<CR>
+
+" Keep status line visible, as we're using Airline.
+set laststatus=2

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
-sudo apt install -y git
+sudo apt install -y tree jq

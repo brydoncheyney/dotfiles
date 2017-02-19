@@ -1,2 +1,0 @@
-export PATH=~/bin:$PATH
-export SHELL=`which zsh`
