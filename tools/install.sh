@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
-sudo apt install -y tree jq
+path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+. ${path}/functions
+
+package tree
+package jq

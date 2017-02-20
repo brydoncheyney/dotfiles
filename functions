@@ -1,0 +1,15 @@
+# -*- mode: sh -*-
+# vi: set ft=sh :
+
+function exists() {
+  local pkg=$1
+  hash ${pkg} &> /dev/null && { echo "${pkg} already installed... skipping"; exit 0; }
+}
+
+function package() {
+  local pkg=$1
+  local x=${2:-${pkg}}
+
+  exists ${x} && { echo "${pkg} already installed... skipping"; exit 0; }
+  echo sudo apt install -y ${pkg}
+}

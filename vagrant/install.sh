@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -eu pipefail
 
+path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+. ${path}/functions
+
+exists vagrant
+
 wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb -P /tmp
 wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_SHA256SUMS -P /tmp
 

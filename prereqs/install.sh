@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
-sudo apt install -y curl
+path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
+. ${path}/functions
+
+package curl

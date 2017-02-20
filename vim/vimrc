@@ -25,3 +25,7 @@ nmap <LocalLeader>f :NERDTreeFind<CR>
 
 " Keep status line visible, as we're using Airline.
 set laststatus=2
+
+" vim-better-whitespace
+" strip all trailing whitespace everytime you save the file for all file types
+autocmd BufEnter * EnableStripWhitespaceOnSave

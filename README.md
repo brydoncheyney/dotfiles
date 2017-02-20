@@ -15,6 +15,7 @@ Install scripts and configuration files for an Ubuntu environment
 - vagrant
 - vim
 - virtualbox
+- vpn
 - zsh
 
 ## Pre requisites
