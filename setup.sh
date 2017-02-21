@@ -11,6 +11,15 @@ ${path}/prereqs/install.sh
 # install and configure packages
 while read d; do
   [[ "prereqs/" == "${d}" ]] && continue
-  ls "${path}/${d}install.sh"
+
+  echo "running ${d}install.sh"
+  ${path}/${d}install.sh
+
   # TODO : link dotfiles | backup where required
 done <<< "$(ls -d */)"
+
+# clean up
+sudo apt autoremove -y
+
+echo
+echo "Done!"
