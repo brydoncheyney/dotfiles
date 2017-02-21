@@ -9,6 +9,7 @@ Install scripts and configuration files for an Ubuntu environment
 - git
 - gnome-terminal
 - google-chrome
+- graphics
 - shell
 - thefuck
 - tmux
