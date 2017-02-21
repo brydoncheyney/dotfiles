@@ -12,6 +12,7 @@ packages="ctrlpvim/ctrlp.vim ntpeters/vim-better-whitespace scrooloose/nerdtree 
 cd ~/.vim/bundle
 for package in ${packages}; do
   dest=$(echo ${package} | awk -F\/ '{print $2}')
-  [[ ! -d ${dest} ]] && git clone https://github.com/${package}.git
-  [[ -d ${dest} ]] && cd ${dest} && git pull --rebase; cd -
+  remote=https://github.com/${package}.git;
+  [[ ! -d ${dest} ]] && { echo "Installing ${remote}"; git clone ${remote}; }
+  [[ -d ${dest} ]] && { echo "Updating ${remote}"; cd ${dest} && git pull --rebase; cd -; }
 done
