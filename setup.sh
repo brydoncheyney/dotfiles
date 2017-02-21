@@ -26,10 +26,29 @@ while read package; do
     continue
   }
 
-  echo "Installing ${package}"
+  echo "++ Installing ${package}"
   ${install_script}
 
-  # TODO : link dotfiles | backup where required
+  # link dot files
+  ls ${path}/${package} | while read file; do
+    target=${path}/${package}/${file}
+    link_name=${HOME}/.${file}
+
+    # ignore +x files as assumed to be install.sh
+    if [ ! -x ${target} ]; then
+      # if the dotfile exists but differs from the configuration file detailed
+      # in the package, then remove and re-link
+      [[ -e ${link_name} ]] && diff -q ${target} ${link_name} && {
+        echo "${link_name} already in place... skipping"
+        continue
+      }
+
+      # backup existing configuration and link dotfile
+      [[ -e ${link_name} ]] && mv ${link_name} ${link_name}.bak
+      ln -s ${target} ${link_name}
+    fi
+  done
+
 done <<< "${packages}"
 
 # clean up
