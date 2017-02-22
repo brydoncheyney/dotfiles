@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
+export USER=$(whoami)
+
 function usage() {
   echo "usage: $0 [PACKAGE]"
   exit 0;
@@ -16,7 +18,7 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 hash curl &> /dev/null || sudo apt install -y curl
 
 # install and configure packages
-packages=${1:-$(ls -d */ | tr -d '/')}
+packages=${1:-$(cd ${path} && ls -d */ | tr -d '/')}
 while read package; do
   [[ "prereqs" == "${package}" ]] && continue
 
