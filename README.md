@@ -23,8 +23,14 @@ Install scripts and configuration files for an Ubuntu environment
 
 - curl
 
-Note that this will be installed as part of the setup.
+Note that this will be installed as part of the setup script.
 
 ## Usage
 
+To install all packages,
+
     ./setup.sh
+
+To install as single package
+
+    ./setup.sh vim
