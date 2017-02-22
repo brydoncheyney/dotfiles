@@ -23,3 +23,6 @@ sudo add-apt-repository "deb https://apt.dockerproject.org/repo/ ubuntu-$(lsb_re
 # install docker
 sudo apt update
 sudo apt install -y docker-engine
+
+# add user to docker group
+sudo usermod -aG docker ${USER}
