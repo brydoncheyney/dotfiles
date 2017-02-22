@@ -4,12 +4,12 @@
 function exists() {
   local pkg=$1
   hash ${pkg} &> /dev/null && { echo "${pkg} already installed... skipping"; exit 0; }
+  return 0
 }
 
 function package() {
   local pkg=$1
   local x=${2:-${pkg}}
 
-  exists ${x} && { echo "${pkg} already installed... skipping"; exit 0; }
-  sudo apt install -y ${pkg}
+  exists ${x} && sudo apt install -y ${pkg}
 }
