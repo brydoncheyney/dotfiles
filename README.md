@@ -41,8 +41,8 @@ To install a single package
 
 ## Vagrant / Docker
 
-A basic [https://www.vagrantup.com](vagrant) /
-[https://www.docker.com/](docker) environment is provided to test changes made
+A basic [vagrant](https://www.vagrantup.com) /
+[docker](https://www.docker.com/) environment is provided to test changes made
 to this repository.
 
 ### Vagrant
