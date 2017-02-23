@@ -7,10 +7,16 @@ sudo apt-get install -y vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-packages="altercation/vim-colors-solarized ctrlpvim/ctrlp.vim ntpeters/vim-better-whitespace scrooloose/nerdtree tpope/vim-sensible tpope/vim-surround vim-airline/vim-airline"
+packages=(altercation/vim-colors-solarized
+          ctrlpvim/ctrlp.vim
+          ntpeters/vim-better-whitespace
+          scrooloose/nerdtree
+          tpope/vim-sensible
+          tpope/vim-surround
+          vim-airline/vim-airline)
 
 cd ~/.vim/bundle
-for package in ${packages}; do
+for package in ${packages[*]}; do
   dest=$(echo ${package} | awk -F\/ '{print $2}')
   remote=https://github.com/${package}.git;
   [[ ! -d ${dest} ]] && { echo "Installing ${remote}"; git clone ${remote}; }
