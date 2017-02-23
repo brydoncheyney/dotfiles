@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
-sudo apt install -y vim
+sudo apt-get install -y vim
 
 # pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \

@@ -6,7 +6,7 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 
 exists zsh
 
-sudo apt install -y zsh
+sudo apt-get install -y zsh
 chsh -s /bin/zsh
 
 # oh-my-zsh

@@ -15,7 +15,7 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . ${path}/functions
 
 # install prerequisite packages
-hash curl &> /dev/null || sudo apt install -y curl
+hash curl &> /dev/null || sudo apt-get install -y curl
 
 # install and configure packages
 packages=${1:-$(cd ${path} && ls -d */ | tr -d '/')}
@@ -54,7 +54,7 @@ while read package; do
 done <<< "${packages}"
 
 # clean up
-sudo apt autoremove -y
+sudo apt-get autoremove -y
 
 echo
 echo "Done!"

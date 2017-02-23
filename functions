@@ -11,5 +11,5 @@ function package() {
   local pkg=$1
   local x=${2:-${pkg}}
 
-  exists ${x} && sudo apt install -y ${pkg}
+  exists ${x} && sudo apt-get install -y ${pkg}
 }

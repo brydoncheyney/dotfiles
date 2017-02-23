@@ -10,5 +10,5 @@ sudo sh -c "echo 'deb http://download.virtualbox.org/virtualbox/debian yakkety c
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
-sudo apt update
-sudo apt install -y virtualbox-5.1
+sudo apt-get update
+sudo apt-get install -y virtualbox-5.1
