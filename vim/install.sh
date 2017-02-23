@@ -14,7 +14,8 @@ packages=(altercation/vim-colors-solarized
           tpope/vim-fugitive
           tpope/vim-sensible
           tpope/vim-surround
-          vim-airline/vim-airline)
+          vim-airline/vim-airline
+          vim-scripts/sudo.vim)
 
 cd ~/.vim/bundle
 for package in ${packages[*]}; do
