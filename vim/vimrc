@@ -23,6 +23,11 @@ set expandtab
 nmap <LocalLeader>nt :NERDTreeToggle<CR>
 nmap <LocalLeader>f :NERDTreeFind<CR>
 
+" Colours
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
+
 " Keep status line visible, as we're using Airline.
 set laststatus=2
 
