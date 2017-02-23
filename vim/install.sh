@@ -11,6 +11,7 @@ packages=(altercation/vim-colors-solarized
           ctrlpvim/ctrlp.vim
           ntpeters/vim-better-whitespace
           scrooloose/nerdtree
+          tpope/vim-fugitive
           tpope/vim-sensible
           tpope/vim-surround
           vim-airline/vim-airline)
