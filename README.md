@@ -27,10 +27,25 @@ Note that this will be installed as part of the setup script.
 
 ## Usage
 
-To install all packages,
+To install all packages
 
-    ./setup.sh
+    [dotfiles] ./setup.sh
 
-To install as single package
+To install a single package
 
-    ./setup.sh vim
+    [dotfiles] ./setup.sh vim
+
+## Vagrant / Docker
+
+A basic [https://www.vagrantup.com](vagrant) /
+[https://www.docker.com/](docker) environment is provided to test changes made
+to this repository.
+
+### Vagrant
+
+    [dotfiles] vagrant docker-run -- /vagrant/setup.sh
+
+### Docker
+
+    [dotfiles] docker build -t dotfiles .
+    [dotfiles] docker run -v $(pwd):/dotfiles dotfiles bash /dotfiles/setup.sh
