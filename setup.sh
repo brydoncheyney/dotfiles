@@ -20,8 +20,6 @@ hash curl &> /dev/null || sudo apt-get install -y curl
 # install and configure packages
 packages=${1:-$(cd ${path} && ls -d */ | tr -d '/')}
 while read package; do
-  [[ "prereqs" == "${package}" ]] && continue
-
   install_script=${path}/${package}/install.sh
   [[ -x ${install_script} ]] || {
     echo "${install_script} does not exist or is not executable - skipping"
