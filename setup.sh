@@ -15,7 +15,9 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . ${path}/functions
 
 # install prerequisite packages
-hash curl &> /dev/null || sudo apt-get install -y curl
+for package in "curl wget"; do
+  hash curl &> /dev/null || sudo apt-get install -y ${package}
+done
 
 # install and configure packages
 packages=${1:-$(cd ${path} && ls -d */ | tr -d '/')}
