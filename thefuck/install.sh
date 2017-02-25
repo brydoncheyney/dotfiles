@@ -9,4 +9,4 @@ package python-dev
 
 exists thefuck
 
-sudo pip -H install psutil thefuck
+sudo -H pip install psutil thefuck
