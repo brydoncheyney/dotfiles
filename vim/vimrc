@@ -23,6 +23,9 @@ set expandtab
 nmap <LocalLeader>nt :NERDTreeToggle<CR>
 nmap <LocalLeader>f :NERDTreeFind<CR>
 
+" Nerd tree tabs - open only if directory was given as a startup argument
+let g:nerdtree_tabs_open_on_console_startup=2
+
 " Colours
 let g:solarized_termcolors=256
 set background=dark

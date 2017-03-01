@@ -9,6 +9,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 packages=(altercation/vim-colors-solarized
           ctrlpvim/ctrlp.vim
+          jistr/vim-nerdtree-tabs
           ntpeters/vim-better-whitespace
           scrooloose/nerdtree
           tpope/vim-fugitive
