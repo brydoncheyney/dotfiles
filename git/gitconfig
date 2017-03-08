@@ -9,3 +9,11 @@
 	name = Brydon Cheyney
 [push]
 	default = simple
+[color]
+	ui = auto
+[color "diff"]
+  meta = magenta bold
+  frag = blue bold
+  new = green bold
+[color "status"]
+  added = green bold
