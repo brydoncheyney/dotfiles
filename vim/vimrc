@@ -37,3 +37,9 @@ set laststatus=2
 " vim-better-whitespace
 " strip all trailing whitespace everytime you save the file for all file types
 autocmd BufEnter * EnableStripWhitespaceOnSave
+
+" Paredit
+let g:paredit_mode = 1
+
+" Rainbow parens
+autocmd Filetype clojure RainbowParenthesesToggle
