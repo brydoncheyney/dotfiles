@@ -19,6 +19,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Backups
+set nobackup
+set noswapfile
+
 " Nerd tree
 nmap <LocalLeader>nt :NERDTreeToggle<CR>
 nmap <LocalLeader>f :NERDTreeFind<CR>
