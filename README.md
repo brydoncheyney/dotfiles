@@ -9,11 +9,13 @@ All of the dotfiles. Inspired by [Brady Lill's disruptive thinking](https://gith
 
 Install scripts and configuration files for an Ubuntu environment
 
+- ansible
 - docker
 - git
 - gnome-terminal
 - google-chrome
 - graphics
+- packer
 - shell
 - thefuck
 - tmux
