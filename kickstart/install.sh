@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-set -eou pipefail
+set -eu pipefail
 
 path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 . ${path}/functions
 
-package tree
-package jq
-package nc
+package python-pykickstart ksvalidator

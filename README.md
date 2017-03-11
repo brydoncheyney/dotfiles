@@ -15,9 +15,11 @@ Install scripts and configuration files for an Ubuntu environment
 - gnome-terminal
 - google-chrome
 - graphics
+- kickstart
 - packer
 - shell
 - thefuck
+- tools (miscellaneous packages)
 - tmux
 - vagrant
 - vim
