@@ -46,7 +46,10 @@ autocmd BufEnter * EnableStripWhitespaceOnSave
 let g:paredit_mode = 1
 
 " Rainbow parens
-autocmd Filetype clojure RainbowParenthesesToggle
+autocmd VimEnter * RainbowParenthesesToggle
+autocmd Syntax * RainbowParenthesesLoadRound
+autocmd Syntax * RainbowParenthesesLoadSquare
+autocmd Syntax * RainbowParenthesesLoadBraces
 
 " Surround
 nmap <LocalLeader>w" ysiw"
