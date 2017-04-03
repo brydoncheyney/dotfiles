@@ -15,6 +15,7 @@ Install scripts and configuration files for an Ubuntu environment
 - gnome-terminal
 - google-chrome
 - graphics
+- java
 - kickstart
 - packer
 - shell
