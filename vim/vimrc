@@ -56,3 +56,4 @@ nmap <LocalLeader>w" ysiw"
 nmap <LocalLeader>w' ysiw'
 nmap <LocalLeader>w( ysiw)
 nmap <LocalLeader>w[ ysiw]
+nmap <LocalLeader>w{ ysiw}
