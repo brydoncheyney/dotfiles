@@ -14,6 +14,7 @@ packages=(altercation/vim-colors-solarized
           kien/rainbow_parentheses.vim
           ntpeters/vim-better-whitespace
           scrooloose/nerdtree
+          tpope/vim-fireplace
           tpope/vim-fugitive
           tpope/vim-sensible
           tpope/vim-surround
