@@ -29,7 +29,6 @@ for package in ${packages[*]}; do
   [[ ! -d ${dest} ]] && { echo "Installing ${remote}"; git clone ${remote}; }
   [[ -d ${dest} ]] && {
     echo "Updating ${remote}"
-    cd ${dest} && git pull --rebase
-    cd - &> /dev/null
+    (cd ${dest} && git pull --rebase)
   }
 done
