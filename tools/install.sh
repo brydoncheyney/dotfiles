@@ -6,4 +6,5 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 
 package tree
 package jq
-package nc
+package netcat
+package ncdu
