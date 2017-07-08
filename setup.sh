@@ -53,8 +53,5 @@ while read package; do
 
 done <<< "${packages}"
 
-# clean up
-sudo apt-get autoremove -y
-
 echo
 echo "Done!"
