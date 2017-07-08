@@ -13,4 +13,4 @@ wget -nc https://releases.hashicorp.com/packer/${version}/packer_${version}_SHA2
 
 cd /tmp
 sha256sum --check --ignore-missing packer_${version}_SHA256SUMS \
-  && sudo unzip -d /usr/local/bin/ /tmp/packer_${version}_linux_amd64.zip
+  && sudo unzip -fo -d /usr/local/bin/ /tmp/packer_${version}_linux_amd64.zip
