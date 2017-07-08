@@ -8,11 +8,30 @@ function usage() {
   exit 0;
 }
 
-[[ $# -gt 1 ]] && usage
+UPDATE=0
 
 # environment
 path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 . ${path}/functions
+
+while getopts ":hu" arg; do
+  case ${arg} in
+    h)
+      usage
+      ;;
+    u)
+      UPDATE=1
+      ;;
+    \?)
+      echo "Invalid option: -${OPTARG}" >&2
+      exit 1;
+      ;;
+  esac
+done
+
+shift $((OPTIND-1))
+
+[[ $# -gt 1 ]] && usage
 
 # install prerequisite packages
 for package in "curl wget"; do
@@ -29,7 +48,7 @@ while read package; do
   }
 
   echo "++ Installing ${package}"
-  ${install_script}
+  UPDATE=${UPDATE} ${install_script}
 
   # link dot files
   ls ${path}/${package} | while read file; do

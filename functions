@@ -3,7 +3,13 @@
 
 function exists() {
   local pkg=$1
-  hash ${pkg} &> /dev/null && { echo "${pkg} already installed... skipping"; exit 0; }
+  hash ${pkg} &> /dev/null && {
+    if [ -z ${UPDATE} ]; then
+      echo "${pkg} already installed... skipping"
+      exit 0
+    fi
+    echo "${pkg} already installed... updating";
+  }
   return 0
 }
 
