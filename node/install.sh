@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu pipefail
 
-version=6.11.1
+version=6.11.2
 binary=node-v${version}-linux-x64.tar.xz
 binary_link=https://nodejs.org/dist/v${version}/${binary}
 shasums=SHASUMS256.txt.asc
@@ -12,8 +12,8 @@ path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 
 exists node
 
-wget -r ${binary_link} -P /tmp
-wget -r ${shasums_link} -P /tmp
+wget -r -nd ${binary_link} -P /tmp
+wget -r -nd ${shasums_link} -P /tmp
 
 (
 cd /tmp
