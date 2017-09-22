@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu pipefail
 
-version=6.11.2
+version=6.11.3
 binary=node-v${version}-linux-x64.tar.xz
 binary_link=https://nodejs.org/dist/v${version}/${binary}
 shasums=SHASUMS256.txt.asc
