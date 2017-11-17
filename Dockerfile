@@ -6,4 +6,4 @@ RUN echo "brydon ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers
 
 USER brydon
 
-CMD /bin/bash
+ENTRYPOINT ["/dotfiles/setup.sh"]

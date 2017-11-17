@@ -17,14 +17,15 @@ Install scripts and configuration files for an Ubuntu environment
 - graphics
 - java
 - kickstart
+- node
 - packer
-- shell
 - thefuck
-- tools (miscellaneous packages)
 - tmux
+- tools (miscellaneous packages)
 - vagrant
 - vim
 - virtualbox
+- vlc
 - vpn
 - zsh
 
@@ -57,4 +58,4 @@ to this repository.
 ### Docker
 
     [dotfiles] docker build -t dotfiles .
-    [dotfiles] docker run -v $(pwd):/dotfiles dotfiles bash /dotfiles/setup.sh
+    [dotfiles] docker run -v $(pwd):/dotfiles dotfiles [ROLE]

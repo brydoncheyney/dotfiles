@@ -1,0 +1,3 @@
+[ $# -eq 1 ] || { echo "Usage: $0 [ROLE]"; exit 0; }
+docker build -t dotfiles .
+docker run -v $(pwd):/dotfiles dotfiles $1
