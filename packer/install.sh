@@ -6,6 +6,7 @@ version=1.1.0
 path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 . ${path}/functions
 
+sudo apt-get install -y unzip
 exists packer
 
 wget -nc https://releases.hashicorp.com/packer/${version}/packer_${version}_linux_amd64.zip -P /tmp
