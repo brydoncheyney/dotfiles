@@ -53,7 +53,7 @@ to this repository.
 
 ### Vagrant
 
-    [dotfiles] vagrant docker-run -- /vagrant/setup.sh
+    [dotfiles] vagrant docker-run -- /vagrant/setup.sh [ROLE]
 
 ### Docker
 
