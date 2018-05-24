@@ -34,6 +34,7 @@ source "${ZSH}/oh-my-zsh.sh"
 
 bindkey '\el' down-case-word
 bindkey '\eu' up-case-word
+bindkey '\e#' pound-insert
 
 export EDITOR=$(which vim)
 
