@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu pipefail
 
-version=1.1.3
+version=1.2.4
 
 path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 . ${path}/functions
