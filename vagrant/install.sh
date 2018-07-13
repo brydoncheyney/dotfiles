@@ -15,6 +15,6 @@ cd /tmp
 sha256sum --check --ignore-missing vagrant_${version}_SHA256SUMS \
   && sudo dpkg -i /tmp/vagrant_${version}_x86_64.deb
 
-for plugin in "vagrant-lxc vagrant-hosts vagrant-triggers"; do
+for plugin in "vagrant-lxc vagrant-hosts"; do
   vagrant plugin install ${plugin}
 done
