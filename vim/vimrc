@@ -2,6 +2,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Modeline
+set modeline
+
 " Reform search.
 set ignorecase
 set smartcase

@@ -9,6 +9,7 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 packages=(altercation/vim-colors-solarized
           ctrlpvim/ctrlp.vim
+          hashivim/vim-terraform
           hashivim/vim-vagrant
           jistr/vim-nerdtree-tabs
           kien/rainbow_parentheses.vim
