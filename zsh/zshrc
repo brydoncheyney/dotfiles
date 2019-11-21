@@ -26,7 +26,7 @@ ZSH_THEME='wedisagree'
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(colored-man docker docker-compose dotenv git lein lxc terraform thefuck vagrant)
+plugins=(colored-man-pages docker docker-compose dotenv git lein terraform thefuck vagrant)
 
 source "${ZSH}/oh-my-zsh.sh"
 
