@@ -58,5 +58,5 @@ Config {
                ]
   , sepChar = "%"
   , alignSep = "}{"
-  , template = "%memory% | %multicpu% | %multicoretemp% | %StdinReader% }{ %battery% | <fc=#ee9a00>%date%</fc> "
+  , template = "%memory% | %multicpu% | %multicoretemp% | %StdinReader% }{ <fc=#ee9a00>%date%</fc> | %battery% "
   }

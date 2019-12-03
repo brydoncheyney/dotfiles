@@ -6,8 +6,6 @@ import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 import System.Exit
 
-myWorkspaces = map show [1 .. 9 :: Int]
-
 myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
     -- launching and killing programs
     [ ((modMask .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf) -- %! Launch terminal
@@ -68,8 +66,15 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 
 myBar = "xmobar"
 
+myWorkspaces = map show [1 .. 6 :: Int]
+
 -- Custom PP, configure it as you like. It determines what is being written to the bar
-myPP = xmobarPP { ppCurrent = xmobarColor "#429942" "" . wrap "<" ">" }
+myPP = xmobarPP {
+    ppCurrent = xmobarColor "green" "" . wrap "[" "]"
+  , ppHiddenNoWindows = xmobarColor "#333333" "" . wrap "" ""
+  , ppSep = " | "
+  , ppOrder = \(ws:_:t:_) -> [ws,t]
+  }
 
 -- Key binding to toggle the gap for the bar
 toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
