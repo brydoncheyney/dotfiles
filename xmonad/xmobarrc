@@ -45,7 +45,7 @@ Config {
                    60
                , Run MultiCoreTemp
                    [
-                   "--template"   , "Temp: <core0>°C|<core1>°C"
+                   "--template"   , "Temp: <avgpc>°C <maxpc>°C"
                    , "--Low"      , "70"        -- units: °C
                    , "--High"     , "80"        -- units: °C
                    , "--low"      , "darkgreen"
