@@ -14,7 +14,7 @@ Config {
                    , "--normal"   , "darkgreen"
                    , "--high"     , "red"
                    ]
-                   60
+                   10
                , Run Memory
                    [
                      "--template" , "Mem: <usedratio>%"
@@ -24,7 +24,7 @@ Config {
                    , "--low"      , "darkgreen"
                    , "--high"     , "red"
                    ]
-                   60
+                   10
                , Run Date "%F %H:%M:%S" "date" 10
                , Run BatteryP
                    ["BAT0"]
@@ -40,9 +40,9 @@ Config {
                        -- AC "on" status
                        , "-O"	, "<fc=#dAA520>Charging</fc>"
                        -- charged status
-                       , "-i"	, "<fc=#006000>Charged</fc>"
+                       , "-i"	, "<fc=#001000>Charged</fc>"
                    ]
-                   60
+                   10
                , Run MultiCoreTemp
                    [
                    "--template"   , "Temp: <avgpc>°C <maxpc>°C"
@@ -52,8 +52,8 @@ Config {
                    , "--normal"   , "darkorange"
                    , "--high"     , "darkred"
                    ]
-                   60
-               -- , Run Wireless "wlp58s0" [ "--template", "<essid>" ] 60
+                   10
+               -- , Run Wireless "wlp58s0" [ "--template", "<essid>" ] 10
                , Run StdinReader
                ]
   , sepChar = "%"
