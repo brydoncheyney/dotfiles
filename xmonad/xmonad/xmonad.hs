@@ -48,6 +48,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
     ++
     [
       ((modMask              , xK_g  ),    spawn "google-chrome")
+    , ((modMask              , xK_v  ),    spawn "virtualbox")
     , ((modMask .|. shiftMask, xK_h  ),    prevWS)
     , ((modMask .|. shiftMask, xK_l  ),    nextWS)
     ]
