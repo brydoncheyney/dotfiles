@@ -40,7 +40,7 @@ Config {
                        -- AC "on" status
                        , "-O"	, "<fc=#dAA520>Charging:</fc> <left>% (<timeleft>)"
                        -- charged status
-                       , "-i"	, "<fc=#001000>Charged</fc>"
+                       , "-i"	, "<fc=#006000>Charged</fc>"
                    ]
                    10
                , Run MultiCoreTemp
