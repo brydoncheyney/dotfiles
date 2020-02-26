@@ -8,7 +8,7 @@ function exists() {
       echo "${pkg} already installed... skipping"
       exit 0
     fi
-    echo "${pkg} already installed... updating";
+    echo "${pkg} already installed... trying to update";
   }
   return 0
 }
